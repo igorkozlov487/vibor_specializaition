@@ -2,6 +2,7 @@
 
 string[] array = { "кря", "привет", "123", ":-)" };
 string[] newarray = new string[0];
+Console.Write("[");
 for (int i = 0; i < array.Length; i++)
 {
     int j = 0;
@@ -11,4 +12,6 @@ for (int i = 0; i < array.Length; i++)
         newarray[j] = array[i];
         Console.Write($"{newarray[j]}; ");
     }
-} 
+}
+Console.Write("]");
+Console.WriteLine(); 
